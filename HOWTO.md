@@ -26,10 +26,9 @@ With AI, the specification becomes the source of truth and determines what gets 
 
 **Objective**: Show that Copilot alone can produce correct code, but rarely clean code.
 
-| Approach | Prompt | Result |
-|----------|--------|---------|
-| **Raw AI** | `"refactor this code"` | Random, Partial, Lacks precision |
-| **PromptOps** | [Structured Prompt](https://github.com/gologic-ca/gologic-promptops/blob/main/.github/prompts/refactor-clean-code.prompt.md) | Precise, Considers constraints, Role-based scope |
+**Comparison**:
+- **Raw AI** with `"refactor this code"` → Random, Partial, Lacks precision
+- **PromptOps** with [Structured Prompt](https://github.com/gologic-ca/gologic-promptops/blob/main/.github/prompts/refactor-clean-code.prompt.md) → Precise, Considers constraints, Role-based scope
 
 **Goal**: Create clear contrast between "raw" AI and "tooled" AI.
 
@@ -80,11 +79,14 @@ With AI, the specification becomes the source of truth and determines what gets 
 
 ## Available Prompts
 
-| Prompt | Purpose | Link |
-|--------|---------|------|
-| **Clean Code** | Code refactoring & quality | [refactor-clean-code.prompt.md](https://github.com/gologic-ca/gologic-copilot-promptops/blob/main/.github/prompts/refactor-clean-code.prompt.md) |
-| **OWASP Security** | Security code review | [security-code-review.prompt.md](https://github.com/gologic-ca/gologic-copilot-promptops/blob/main/.github/prompts/security-code-review.prompt.md) |
-| **Pipeline Builder** | CI/CD optimization | [ci-pipeline-builder.prompt.md](https://github.com/gologic-ca/gologic-copilot-promptops/blob/main/.github/prompts/ci-pipeline-builder.prompt.md) |
+- **Clean Code** - Code refactoring & quality  
+  [refactor-clean-code.prompt.md](https://github.com/gologic-ca/gologic-copilot-promptops/blob/main/.github/prompts/refactor-clean-code.prompt.md)
+
+- **OWASP Security** - Security code review  
+  [security-code-review.prompt.md](https://github.com/gologic-ca/gologic-copilot-promptops/blob/main/.github/prompts/security-code-review.prompt.md)
+
+- **Pipeline Builder** - CI/CD optimization  
+  [ci-pipeline-builder.prompt.md](https://github.com/gologic-ca/gologic-copilot-promptops/blob/main/.github/prompts/ci-pipeline-builder.prompt.md)
 
 ---
 
@@ -93,38 +95,73 @@ With AI, the specification becomes the source of truth and determines what gets 
 
 ### Software Engineering
 
-| Use Case | Objective | Impact |
-|----------|-----------|--------|
-| **AI-Guided Refactoring** | Modernize legacy code according to Clean Architecture principles | Reduced technical debt, consistent code quality |
-| **Unit & Functional Test Generation** | Systematically increase test coverage | Fewer regressions, faster QA cycles |
-| **Living Code Documentation** | Auto-generate technical documentation from source code and comments | Up-to-date docs, accelerated onboarding |
-| **Security & Compliance Review** | Detect security flaws, exposed secrets, vulnerable dependencies | Built-in security "by design" |
+- **AI-Guided Refactoring**  
+  *Objective*: Modernize legacy code according to Clean Architecture principles  
+  *Impact*: Reduced technical debt, consistent code quality
+
+- **Unit & Functional Test Generation**  
+  *Objective*: Systematically increase test coverage  
+  *Impact*: Fewer regressions, faster QA cycles
+
+- **Living Code Documentation**  
+  *Objective*: Auto-generate technical documentation from source code and comments  
+  *Impact*: Up-to-date docs, accelerated onboarding
+
+- **Security & Compliance Review**  
+  *Objective*: Detect security flaws, exposed secrets, vulnerable dependencies  
+  *Impact*: Built-in security "by design"
 
 ### SDLC & CI/CD
 
-| Use Case | Objective | Impact |
-|----------|-----------|--------|
-| **CI/CD Pipeline Generation & Optimization** | Create consistent GitHub Actions workflows compliant with internal standards | Fewer errors, faster deployments |
-| **Pipeline Review Automation** | Audit and improve existing CI/CD pipeline quality | More stable pipelines, reduced cloud costs |
-| **Changelog & Release Notes Generation** | Standardize version notes for each deployment | Clearer communication between Dev, Ops, and Product |
-| **AI Delivery Criteria Validation** | Automate quality criteria validation before production | Reinforced CI/CD governance |
+- **CI/CD Pipeline Generation & Optimization**  
+  *Objective*: Create consistent GitHub Actions workflows compliant with internal standards  
+  *Impact*: Fewer errors, faster deployments
+
+- **Pipeline Review Automation**  
+  *Objective*: Audit and improve existing CI/CD pipeline quality  
+  *Impact*: More stable pipelines, reduced cloud costs
+
+- **Changelog & Release Notes Generation**  
+  *Objective*: Standardize version notes for each deployment  
+  *Impact*: Clearer communication between Dev, Ops, and Product
+
+- **AI Delivery Criteria Validation**  
+  *Objective*: Automate quality criteria validation before production  
+  *Impact*: Reinforced CI/CD governance
 
 ### Platform Engineering
 
-| Use Case | Objective | Impact |
-|----------|-----------|--------|
-| **Assisted Migration & Re-platforming** | Migrate tools (Bitbucket → GitHub, Jenkins → GitHub Actions, Nexus → Artifactory) | Accelerated migration, less rework |
-| **Observability & Assisted Diagnostics** | Detect bottlenecks in systems and pipelines | Reduced MTTR, increased resilience |
-| **Cloud & License Cost Optimization** | Analyze and reduce operational costs | Tangible savings, financial visibility |
-| **AI Playbook & Runbook Generation** | Auto-document incidents, resolutions, and standard procedures | Knowledge transfer and operational reliability |
+- **Assisted Migration & Re-platforming**  
+  *Objective*: Migrate tools (Bitbucket → GitHub, Jenkins → GitHub Actions, Nexus → Artifactory)  
+  *Impact*: Accelerated migration, less rework
+
+- **Observability & Assisted Diagnostics**  
+  *Objective*: Detect bottlenecks in systems and pipelines  
+  *Impact*: Reduced MTTR, increased resilience
+
+- **Cloud & License Cost Optimization**  
+  *Objective*: Analyze and reduce operational costs  
+  *Impact*: Tangible savings, financial visibility
+
+- **AI Playbook & Runbook Generation**  
+  *Objective*: Auto-document incidents, resolutions, and standard procedures  
+  *Impact*: Knowledge transfer and operational reliability
 
 ---
 
 ## References
 
-| Resource | Link | Description |
-|----------|------|-------------|
-| **Continuous AI** | [githubnext.com/projects/continuous-ai](https://githubnext.com/projects/continuous-ai/) | GitHub Next's continuous AI integration |
-| **Awesome Copilot** | [github.com/github/awesome-copilot](https://github.com/github/awesome-copilot/) | Curated list of Copilot resources |
-| **Speckit** | [Spec-driven Development](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/) | AI-powered spec-driven development toolkit |
-| **PromptOps Blog** | [promptops.dev](https://promptops.dev/article/Best_practices_for_designing_effective_prompts_for_language_models.html) | Best practices for prompt engineering |
+- **Continuous AI** - GitHub Next's continuous AI integration  
+  [githubnext.com/projects/continuous-ai](https://githubnext.com/projects/continuous-ai/)
+
+- **Awesome Copilot** - Curated list of Copilot resources  
+  [github.com/github/awesome-copilot](https://github.com/github/awesome-copilot/)
+
+- **Speckit** - AI-powered spec-driven development toolkit  
+  [Spec-driven Development](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/)
+
+- **SpecLang** - Let an AI-powered toolchain manage the implementation  
+  [SpeckLang](https://githubnext.com/projects/speclang)
+
+- **PromptOps Blog** - Best practices for prompt engineering  
+  [promptops.dev](https://promptops.dev/article/Best_practices_for_designing_effective_prompts_for_language_models.html)
