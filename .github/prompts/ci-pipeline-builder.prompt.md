@@ -1,64 +1,71 @@
 ﻿---
 mode: "agent"
-description: 'Générer un pipeline CI adapté au projet et à l outil d orchestration choisi'
+description: 'Generate CI pipeline adapted to project and chosen orchestration tool'
 ---
 
-#  Objectif
-Générer un pipeline **Continuous Integration (CI)** adapté au contexte d'un projet (application, serverless, Infrastructure-as-Code) en demandant d'abord l'outil d'orchestration pour adapter la syntaxe et les bonnes pratiques.
+# 🎯 Objective
+Generate a **Continuous Integration (CI)** pipeline adapted to the project context (application, serverless, Infrastructure-as-Code) by first asking for the orchestration tool to adapt syntax and best practices.
 
-#  Contexte
-Projet nécessitant un pipeline CI avec :
-- Code source sans pipeline automatisé ou pipeline obsolète
-- Besoin d'automatisation des étapes build, test, publish
-- Multiples outils d'orchestration possibles (GitHub Actions, GitLab CI, etc.)
-- Stack technologique variée selon le type de projet
-- Exigences de sécurité et d'observabilité modernes
+# 👤 As a [Role]
+**Senior DevOps Engineer** specializing in:
+- **CI/CD pipeline design** and automation
+- **Multi-platform orchestration** (GitHub Actions, GitLab CI, Azure DevOps, Jenkins)
+- **Security integration** and DevSecOps practices
+- **DORA metrics** and observability implementation
 
-#  Problèmes identifiés
-- **Pas d'outil d'orchestration défini** : Syntaxe YAML différente selon la plateforme
-- **Pipeline manquant ou obsolète** : Pas d'automatisation des builds/tests
-- **Sécurité insuffisante** : Pas de scan de vulnérabilités ou gestion des secrets
-- **Manque d'observabilité** : Pas de métriques DORA ou traçabilité
-- **Configuration manuelle** : Étapes de déploiement non reproductibles
+# 🏗️ Context
+Project requiring CI pipeline with:
+- Source code without automated pipeline or obsolete pipeline
+- Need for build, test, publish automation
+- Multiple orchestration tools possible (GitHub Actions, GitLab CI, etc.)
+- Varied technology stack depending on project type
+- Modern security and observability requirements
 
-#  Objectif du refactoring
-- **Identifier l'orchestrateur** : Demander l'outil CI/CD avant génération
-- **Pipeline adapté** : Syntaxe et bonnes pratiques spécifiques à la plateforme
-- **Sécurité intégrée** : Scans, gestion des secrets, conformité
-- **Observabilité** : Métriques, logs, artefacts, alertes
+# 🔍 Identified Problems
+- **No defined orchestration tool**: Different YAML syntax per platform
+- **Missing or obsolete pipeline**: No build/test automation
+- **Insufficient security**: No vulnerability scanning or secrets management
+- **Lack of observability**: No DORA metrics or traceability
+- **Manual configuration**: Non-reproducible deployment steps
 
-#  Contraintes techniques
-- **Demander l'orchestrateur** : GitHub Actions, GitLab CI, Azure DevOps, Jenkins, etc.
-- **Agnostique technologie** : Adaptable à tout langage/framework
-- **Sécurité obligatoire** : Pas de secrets en clair, scans intégrés
-- **Reproductibilité** : Pipeline exécutable en local et en CI
+# 💡 Refactoring Objective
+- **Identify orchestrator**: Ask for CI/CD tool before generation
+- **Adapted pipeline**: Platform-specific syntax and best practices
+- **Integrated security**: Scans, secrets management, compliance
+- **Observability**: Metrics, logs, artifacts, alerts
 
-#  Attentes de sortie
-1. **Configuration initiale** :
-   - Question sur l'outil d'orchestration CI/CD
-   - Détection du type de projet et stack technologique
+# ⚙️ Technical Constraints
+- **Ask for orchestrator**: GitHub Actions, GitLab CI, Azure DevOps, Jenkins, etc.
+- **Technology agnostic**: Adaptable to any language/framework
+- **Security mandatory**: No plain secrets, integrated scans
+- **Reproducibility**: Pipeline executable locally and in CI
 
-2. **Pipeline YAML complet** :
-   - Fichier adapté à l'orchestrateur choisi
-   - Étapes Build  Test  Publish structurées
-   - Gestion des secrets et variables d'environnement
+# 📐 Expected Output
+1. **Initial configuration**:
+   - Question about CI/CD orchestration tool
+   - Detection of project type and technology stack
 
-3. **Bonnes pratiques intégrées** :
-   - Scans de sécurité (Trivy, Snyk)
-   - Tests automatisés avec couverture
-   - Artefacts versionnés et signés
+2. **Complete YAML pipeline**:
+   - File adapted to chosen orchestrator
+   - Structured Build → Test → Publish steps
+   - Secrets and environment variables management
 
-#  Style et bonnes pratiques
-- **KISS** : Keep It Simple, Stupid - pipeline minimal viable
-- **DRY** : Don't Repeat Yourself - éviter la duplication
-- **Security by design** : sécurité intégrée dès le départ
-- **DORA metrics** : Lead Time, Deployment Frequency, MTTR, Change Fail Rate
+3. **Integrated best practices**:
+   - Security scans (Trivy, Snyk)
+   - Automated tests with coverage
+   - Versioned and signed artifacts
 
-#  Format de réponse attendu
-1. **Question initiale** : Quel outil d'orchestration CI/CD utilisez-vous ?
-2. **Pipeline généré** :
-   - Fichier YAML complet avec commentaires
-   - Explication étape par étape (build/test/publish)
-3. **Recommandations** :
-   - Améliorations sécurité et performance
-   - Métriques et observabilité
+# 🧠 Style and Best Practices
+- **KISS**: Keep It Simple, Stupid - minimal viable pipeline
+- **DRY**: Don't Repeat Yourself - avoid duplication
+- **Security by design**: integrated security from the start
+- **DORA metrics**: Lead Time, Deployment Frequency, MTTR, Change Fail Rate
+
+# 🚀 Expected Response Format
+1. **Initial question**: What CI/CD orchestration tool are you using?
+2. **Generated pipeline**:
+   - Complete YAML file with comments
+   - Step-by-step explanation (build/test/publish)
+3. **Recommendations**:
+   - Security and performance improvements
+   - Metrics and observability

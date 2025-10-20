@@ -1,100 +1,92 @@
 # 🚀 Gologic Copilot PromptOps
 
-> **Collection de prompts d'ingénierie logicielle pour GitHub Copilot**  
-> Accélérez vos pratiques DevOps, sécurité et architecture avec des agents IA spécialisés
+> **Software Engineering Prompts Collection for GitHub Copilot**  
+> Accelerate your DevOps, security, and architecture practices with specialized AI agents
 
-## 📋 Vue d'ensemble
+## 📋 Overview
 
-Ce dépôt contient une collection complète de **prompts d'agent GitHub Copilot** pour améliorer la qualité, la sécurité et la fiabilité de vos applications. Tous les prompts suivent le format standardisé [`PROMPT.md`](PROMPT.md) pour garantir cohérence et professionnalisme.
+This repository contains a comprehensive collection of **GitHub Copilot agent prompts** to enhance the quality, security, and reliability of your applications. All prompts follow the standardized [`PROMPT.md`](PROMPT.md) format to ensure consistency and professionalism.
 
-### 🎯 Objectifs du projet
+### 🎯 Project Objectives
 
-- **Standardiser** les pratiques d'ingénierie logicielle via l'IA
-- **Accélérer** l'adoption des bonnes pratiques (Clean Code, DevOps, SRE)
-- **Sécuriser** le développement avec des revues automatisées
-- **Simplifier** l'implémentation des architectures modernes
+- **Standardize** software engineering practices through AI
+- **Accelerate** adoption of best practices (Clean Code, DevOps, SRE)
+- **Secure** development with automated reviews
+- **Simplify** implementation of modern architectures
 
-## 📚 Catalogue des prompts
-
-### 🏗️ **Twelve-Factor Apps** (12 prompts)
-Implémentez les principes des [Twelve-Factor Apps](https://12factor.net/fr/) pour des applications cloud-native robustes :
-
-| # | Principe | Description | Prompt |
-|---|----------|-------------|--------|
-| 1 | **Codebase** | Une seule base de code suivie par gestion de version, plusieurs déploiements | [🔗](/.github/prompts/twelve-factor-01.prompt.md) |
-| 2 | **Dependencies** | Déclarer et isoler explicitement toutes les dépendances | [🔗](/.github/prompts/twelve-factor-02.prompt.md) |
-| 3 | **Config** | Stocker la configuration dans l'environnement, pas dans le code | [🔗](/.github/prompts/twelve-factor-03.prompt.md) |
-| 4 | **Backing Services** | Traiter les services externes comme des ressources attachées | [🔗](/.github/prompts/twelve-factor-04.prompt.md) |
-| 5 | **Build, Release, Run** | Séparer strictement les étapes de build, release et run | [🔗](/.github/prompts/twelve-factor-05.prompt.md) |
-| 6 | **Processes** | Exécuter l'application comme un ou plusieurs processus sans état | [🔗](/.github/prompts/twelve-factor-06.prompt.md) |
-| 7 | **Port Binding** | Exposer les services via des ports | [🔗](/.github/prompts/twelve-factor-07.prompt.md) |
-| 8 | **Concurrency** | Mettre à l'échelle via le modèle de processus | [🔗](/.github/prompts/twelve-factor-08.prompt.md) |
-| 9 | **Disposability** | Maximiser la robustesse avec des démarrages rapides et des arrêts gracieux | [🔗](/.github/prompts/twelve-factor-09.prompt.md) |
-| 10 | **Dev/Prod Parity** | Garder les environnements aussi similaires que possible | [🔗](/.github/prompts/twelve-factor-10.prompt.md) |
-| 11 | **Logs** | Traiter les logs comme des flux d'événements | [🔗](/.github/prompts/twelve-factor-11.prompt.md) |
-| 12 | **Admin Processes** | Exécuter les tâches d'administration comme des processus ponctuels | [🔗](/.github/prompts/twelve-factor-12.prompt.md) |
+## 📚 Prompts Catalog
 
 ### 🔧 **DevOps & Engineering**
 
-| Prompt | Description | Cas d'usage |
-|--------|-------------|-------------|
-| [**CI Pipeline Builder**](/.github/prompts/ci-pipeline-builder.prompt.md) | Générer des pipelines CI adaptés à votre orchestrateur | GitHub Actions, GitLab CI, Azure DevOps, Jenkins |
-| [**Clean Code Refactoring**](/.github/prompts/refactor-clean-code.prompt.md) | Améliorer le code avec les principes Clean Code | Refactoring, dette technique, maintenabilité |
+| Prompt | Description | Use Cases | Expert Role |
+|--------|-------------|-----------|-------------|
+| [**CI Pipeline Builder**](/.github/prompts/ci-pipeline-builder.prompt.md) | Generate CI pipelines adapted to your orchestrator | GitHub Actions, GitLab CI, Azure DevOps, Jenkins | Senior DevOps Engineer |
+| [**Clean Code Refactoring**](/.github/prompts/refactor-clean-code.prompt.md) | Improve code with Clean Code principles | Refactoring, technical debt, maintainability | Senior Software Engineer |
 
-### 🛡️ **Sécurité & Fiabilité**
+### 🛡️ **Security & Reliability**
 
-| Prompt | Description | Spécialisation |
-|--------|-------------|----------------|
-| [**Security Code Review**](/.github/prompts/security-code-review.prompt.md) | Auditer la sécurité avec les principes OWASP | AppSec, vulnérabilités, SSDLC |
-| [**SRE Guardian**](/.github/prompts/sre-guardian.prompt.md) | Améliorer la fiabilité avec les principes SRE | Observabilité, résilience, DORA metrics |
+| Prompt | Description | Specialization | Expert Role |
+|--------|-------------|----------------|-------------|
+| [**Security Code Review**](/.github/prompts/security-code-review.prompt.md) | Audit security with OWASP principles | AppSec, vulnerabilities, SSDLC | Security Engineer (AppSec) |
+| [**SRE Guardian**](/.github/prompts/sre-guardian.prompt.md) | Improve reliability with SRE principles | Observability, resilience, DORA metrics | Senior Site Reliability Engineer |
 
-## 🚀 Comment utiliser
+## 🚀 How to Use
 
-### 1. **Choisir le prompt adapté**
-Identifiez le domaine d'amélioration (architecture, sécurité, CI/CD, etc.)
+### 1. **Choose the right prompt**
+Identify the improvement domain (architecture, security, CI/CD, etc.)
 
-### 2. **Ouvrir dans GitHub Copilot**
+### 2. **Open in GitHub Copilot**
 ```bash
-# Copier le contenu du prompt dans GitHub Copilot Chat
-# Ou utiliser directement via @workspace
+# Copy the prompt content into GitHub Copilot Chat
+# Or use directly via @workspace
 ```
 
-### 3. **Décrire votre contexte**
-- État actuel de votre application
-- Technologies utilisées  
-- Objectifs spécifiques
+### 3. **Describe your context**
+- Current state of your application
+- Technologies used  
+- Specific objectives
 
-### 4. **Appliquer les recommandations**
-L'agent analysera votre code et proposera des améliorations concrètes
+### 4. **Apply recommendations**
+The agent will analyze your code and propose concrete improvements
 
-## 📖 Format standardisé
+## 📖 Standardized Format
 
-Tous les prompts suivent le format [`PROMPT.md`](PROMPT.md) avec 8 sections structurées :
+All prompts follow the [`PROMPT.md`](PROMPT.md) format with **9 structured sections**:
 
-- 🎯 **Objectif** - But du prompt
-- 🏗️ **Contexte** - Situation actuelle
-- 🔍 **Problèmes identifiés** - Points de douleur
-- 💡 **Objectif du refactoring** - Résultats attendus
-- ⚙️ **Contraintes techniques** - Limitations et prérequis
-- 📐 **Attentes de sortie** - Livrables concrets
-- 🧠 **Style et bonnes pratiques** - Références méthodologiques
-- 🚀 **Format de réponse attendu** - Structure des recommandations
+- 🎯 **Objective** - Prompt purpose
+- 👤 **As a [Role]** - Expert perspective and specialization
+- 🏗️ **Context** - Current situation
+- 🔍 **Identified Problems** - Pain points
+- 💡 **Refactoring Objective** - Expected results
+- ⚙️ **Technical Constraints** - Limitations and prerequisites
+- 📐 **Expected Output** - Concrete deliverables
+- 🧠 **Style and Best Practices** - Methodological references
+- 🚀 **Expected Response Format** - Recommendations structure
 
-## 🏢 À propos de Gologic
+## 🎭 Expert Roles
 
-**Gologic** est spécialisé dans l'accompagnement des entreprises vers l'excellence technique et opérationnelle. Ces prompts démontrent notre approche **AI-First** pour :
+Each prompt adopts a specialized expert perspective:
 
-- Accélérer l'adoption des bonnes pratiques
-- Standardiser la qualité logicielle
-- Réduire la dette technique
-- Optimiser les performances et la sécurité
+- **👨‍💻 Senior DevOps Engineer** - CI/CD pipelines, orchestration, DORA metrics
+- **🔒 Security Engineer (AppSec)** - OWASP, vulnerability assessment, DevSecOps  
+- **⚡ Site Reliability Engineer** - SLI/SLO, observability, incident response
+- **🏗️ Senior Software Engineer** - Clean Code, SOLID principles, refactoring
+
+## 🏢 About Gologic
+
+**Gologic** specializes in guiding companies toward technical and operational excellence. These prompts demonstrate our **AI-First** approach to:
+
+- Accelerate best practices adoption
+- Standardize software quality
+- Reduce technical debt
+- Optimize performance and security
 
 ---
 
-### 🤝 Contribution
+### 🤝 Contributing
 
-Les contributions sont bienvenues ! Assurez-vous de suivre le format [`PROMPT.md`](PROMPT.md) pour maintenir la cohérence.
+Contributions are welcome! Make sure to follow the [`PROMPT.md`](PROMPT.md) format to maintain consistency.
 
-### 📄 Licence
+### 📄 License
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

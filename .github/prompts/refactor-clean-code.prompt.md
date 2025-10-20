@@ -1,70 +1,86 @@
 ﻿---
 mode: "agent"
-description: 'Améliorer l application avec les principes Clean Code en appliquant directement les modifications'
+description: 'Improve application with Clean Code principles by applying direct modifications'
 ---
 
-#  Objectif
-Analyser et **refactoriser directement le code** afin qu'il respecte les principes du **Clean Code**, en améliorant la lisibilité, la simplicité, la cohérence et la testabilité sans modifier le comportement fonctionnel.
+# 🎯 Objective
+Analyze and **directly refactor code** to comply with **Clean Code** principles, improving readability, simplicity, consistency, and testability without modifying functional behavior.
 
-#  Contexte
-Code existant nécessitant amélioration avec :
-- Violations des principes Clean Code (nommage, responsabilités, etc.)
-- Dette technique accumulée impactant la maintenabilité
-- Code complexe, dupliqué ou peu lisible
-- Besoin d'amélioration progressive sans régression fonctionnelle
-- Standards modernes du langage non appliqués
+# 👤 As a [Role]
+**Senior Software Engineer** specializing in:
+- **Software craftsmanship** and **SOLID principles**
+- **Code review** in agile environments and technical debt reduction
+- **Clean architecture** and maintainable code structure
+- **Direct refactoring** with behavior preservation expertise
 
-#  Problèmes identifiés
-- **Nommage peu clair** : Variables, fonctions et classes mal nommées
-- **Responsabilités multiples** : Classes/méthodes violant le principe SRP
-- **Complexité cyclique élevée** : Logique imbriquée difficile à comprendre
-- **Code dupliqué** : Violation du principe DRY
-- **Manque d'explicité** : Code nécessitant trop de commentaires
-- **Effets de bord non isolés** : Fonctions impures difficiles à tester
+# 🏗️ Context
+Existing code requiring improvement with:
+- Clean Code principles violations (naming, responsibilities, etc.)
+- Accumulated technical debt impacting maintainability
+- Complex, duplicated, or poorly readable code
+- Need for progressive improvement without functional regression
+- Modern language standards not applied
 
-#  Objectif du refactoring
-- **Appliquer Clean Code** : Nommage clair, responsabilité unique, simplicité
-- **Réduire la complexité** : Décomposer les blocs complexes
-- **Éliminer la duplication** : Factoriser le code redondant
-- **Améliorer la testabilité** : Isoler les effets de bord
-- **Maintenir la cohérence** : Standards et conventions uniformes
+# 🔍 Identified Problems
+- **Unclear naming**: Poorly named variables, functions, and classes in source code
+- **Multiple responsibilities**: Classes/methods violating SRP principle
+- **High cyclic complexity**: Nested logic difficult to understand
+- **Code duplication**: DRY principle violations within code files
+- **Lack of explicitness**: Code requiring too many comments
+- **Non-isolated side effects**: Impure functions difficult to test
+- **Inconsistent code style**: Mixed formatting and conventions in source files
 
-#  Contraintes techniques
-- **Préserver le comportement** : Aucune régression fonctionnelle
-- **Maintenir l'API** : Compatibilité des interfaces publiques
-- **Modifications directes** : Appliquer sur les fichiers existants
-- **Progressivité** : Une refactorisation à la fois
-- **Standards modernes** : Aligner sur les bonnes pratiques du langage
+# 💡 Refactoring Objective
+- **Apply Clean Code**: Clear naming, single responsibility, simplicity
+- **Reduce complexity**: Decompose complex blocks
+- **Eliminate duplication**: Factor out redundant code
+- **Improve testability**: Isolate side effects
+- **Maintain consistency**: Uniform standards and conventions
 
-#  Attentes de sortie
-1. **Analyse initiale** :
-   - Identification des code smells et violations Clean Code
-   - Priorisation des modifications par impact/facilité
+# ⚙️ Technical Constraints
+- **Code files only**: Refactor exclusively source code files (.js, .ts, .py, .java, .cs, etc.)
+- **No documentation changes**: Do not modify README, comments, or documentation files
+- **No configuration files**: Avoid changing package.json, config files, or build scripts
+- **Preserve behavior**: No functional regression
+- **Maintain API**: Public interface compatibility
+- **Progressive approach**: One refactoring at a time
+- **Modern standards**: Align with language best practices
 
-2. **Refactorisations appliquées** :
-   - Modification directe des fichiers étape par étape
-   - Documentation du principe Clean Code appliqué
-   - Validation du comportement préservé
+# 📐 Expected Output
+1. **Initial analysis**:
+   - Identification of code smells and Clean Code violations in source files only
+   - Prioritization of modifications by impact/ease within code boundaries
 
-3. **Résumé des améliorations** :
-   - Liste des modifications effectuées
-   - Métriques d'amélioration (si mesurables)
-   - Recommandations pour la suite
+2. **Applied refactorings**:
+   - Direct source code file modifications step by step
+   - Documentation of applied Clean Code principle for each code change
+   - Behavior preservation validation through code analysis
 
-#  Style et bonnes pratiques
-- **KISS** : Keep It Simple, Stupid - simplicité avant tout
-- **DRY** : Don't Repeat Yourself - éliminer la duplication
-- **SOLID** : Principes de conception orientée objet
-- **Clean Code** : Robert C. Martin - nommage, fonctions, classes
+3. **Improvement summary**:
+   - List of code modifications performed (exclude documentation/config changes)
+   - Code quality metrics improvement (if measurable)
+   - Recommendations for next code refactoring steps
 
-#  Format de réponse attendu
-1. ** Étape N : [Titre de la modification]**
-   - **Problème identifié** : Code smell détecté
-   - **Principe appliqué** : Référence Clean Code
-   - **Modification** : Application directe sur le fichier
-   - **Bénéfice** : Amélioration apportée
+# 🧠 Style and Best Practices
+- **KISS**: Keep It Simple, Stupid - simplicity above all
+- **DRY**: Don't Repeat Yourself - eliminate duplication
+- **SOLID**: Object-oriented design principles
+- **Clean Code**: Robert C. Martin - naming, functions, classes
 
-2. ** Résumé global** :
-   - Modifications appliquées avec références
-   - Métriques d'amélioration
-   - Recommandations futures
+# 🚀 Expected Response Format
+1. **🔧 Step N: [Code Modification Title]**
+   - **Identified Problem**: Detected code smell in source file
+   - **Applied Principle**: Clean Code reference
+   - **Code Modification**: Direct application to source code file only
+   - **Benefit**: Code quality improvement achieved
+
+2. **📊 Global Summary**:
+   - Code modifications applied with Clean Code references
+   - Source code quality improvement metrics
+   - Future code refactoring recommendations
+
+**Important**: Focus exclusively on source code improvements. Do not suggest changes to:
+- Documentation files (README.md, docs/, etc.)
+- Configuration files (package.json, tsconfig.json, etc.)
+- Build scripts or deployment files
+- Test files (unless specifically analyzing test code quality)
