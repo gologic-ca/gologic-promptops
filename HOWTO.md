@@ -12,7 +12,7 @@ With AI, the specification becomes the source of truth and determines what gets 
 
 ## What is PromptOps?
 
-**PromptOps is an industrialization concept for IT prompts** — it allows gathering functional and non-functional requirements in prompt form, making them reusable, multi-business, and versionable over time to be applied to all types of code.
+**PromptOps brings engineering rigor to AI prompting** — it systematizes functional and non-functional requirements into precise, reusable prompts that work consistently across domains (development, QA, security, operations) and can be versioned and applied to any codebase with predictable results.
 
 ### Meta Format
 **Prompt Contract Template**: [PROMPT.md](https://github.com/gologic-ca/gologic-copilot-promptops/blob/main/PROMPT.md)
