@@ -22,6 +22,7 @@ This repository contains a comprehensive collection of **Prompts** to enhance th
 |--------|-------------|-----------|-------------|
 | [**CI Pipeline Builder**](/.github/prompts/ci-pipeline-builder.prompt.md) | Generate CI pipelines adapted to your orchestrator | GitHub Actions, GitLab CI, Azure DevOps, Jenkins | Senior DevOps Engineer |
 | [**Clean Code Refactoring**](/.github/prompts/refactor-clean-code.prompt.md) | Improve code with Clean Code principles | Refactoring, technical debt, maintainability | Senior Software Engineer |
+| [**Clean Database Refactoring**](/.github/prompts/refactor-clean-database.prompt.md) | Improve database design and queries with Clean Database principles | Schema optimization, SQL refactoring, performance tuning | Senior Database Engineer |
 
 ### **Security & Reliability**
 
