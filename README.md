@@ -29,6 +29,7 @@ This repository contains a comprehensive collection of **Prompts** to enhance th
 | Prompt | Description | Specialization | Expert Role |
 |--------|-------------|----------------|-------------|
 | [**Security Code Review**](/.github/prompts/security-code-review.prompt.md) | Audit security with OWASP principles | AppSec, vulnerabilities, SSDLC | Security Engineer (AppSec) |
+| [**Secure Code Vulnerabilities**](/.github/prompts/secure-code-vulnerabilities.prompt.md) | Fix code-level security vulnerabilities with educational explanations | Code security, vulnerability remediation, secure coding | Security-Focused Software Engineer |
 | [**SRE Guardian**](/.github/prompts/sre-guardian.prompt.md) | Improve reliability with SRE principles | Observability, resilience, DORA metrics | Senior Site Reliability Engineer |
 
 ### Contributing
