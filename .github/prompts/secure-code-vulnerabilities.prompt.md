@@ -22,16 +22,16 @@ Existing code requiring security hardening with:
 - Developer education on secure coding practices
 
 # Identified Problems
-- **Injection vulnerabilities**: SQL, NoSQL, command injection in code
-- **Cross-Site Scripting (XSS)**: Unescaped user input in output
-- **Insecure deserialization**: Unsafe object handling
-- **Path traversal**: Unvalidated file path operations
-- **Weak cryptography**: Insecure algorithms or implementation
-- **Hardcoded secrets**: Credentials and keys in source code
-- **Insecure random values**: Predictable tokens or IDs
-- **Missing input validation**: Unvalidated or unsanitized user input
-- **Improper error handling**: Information leakage through errors
-- **Unsafe redirects**: Unvalidated redirect destinations
+- **Injection vulnerabilities**: SQL, NoSQL, command injection in code (CWE-89, CWE-78)
+- **Cross-Site Scripting (XSS)**: Unescaped user input in output (CWE-79)
+- **Insecure deserialization**: Unsafe object handling (CWE-502)
+- **Path traversal**: Unvalidated file path operations (CWE-22)
+- **Weak cryptography**: Insecure algorithms or implementation (CWE-327, CWE-328)
+- **Hardcoded secrets**: Credentials and keys in source code (CWE-798)
+- **Insecure random values**: Predictable tokens or IDs (CWE-330)
+- **Missing input validation**: Unvalidated or unsanitized user input (CWE-20)
+- **Improper error handling**: Information leakage through errors (CWE-209)
+- **Unsafe redirects**: Unvalidated redirect destinations (CWE-601)
 
 # Refactoring Objective
 - **Fix vulnerabilities**: Directly modify code to eliminate security weaknesses
@@ -95,7 +95,7 @@ Existing code requiring security hardening with:
    - Recommendations for next security validation
 
 **Important**: Focus exclusively on code-level security improvements. Do not:
-- Update dependencies or handle CVEs (use SonarQube, Dependabot, etc.)
+- Update dependencies or handle CVEs (handled by tools like SonarQube, Dependabot, Snyk, etc.)
 - Modify infrastructure or deployment configurations
 - Change documentation files unless removing exposed secrets
 - Alter build scripts or CI/CD pipelines
