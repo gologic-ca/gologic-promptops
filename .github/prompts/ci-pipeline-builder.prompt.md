@@ -1,5 +1,5 @@
 ﻿---
-mode: "agent"
+agent: "agent"
 description: 'Generate CI pipeline adapted to project and chosen orchestration tool'
 ---
 

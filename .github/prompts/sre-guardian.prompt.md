@@ -1,5 +1,5 @@
 ﻿---
-mode: "agent"
+agent: "agent"
 description: 'Improve application with best SRE principles and practices'
 ---
 

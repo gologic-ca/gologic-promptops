@@ -1,5 +1,5 @@
 ﻿---
-mode: "agent"
+agent: "agent"
 description: 'Improve application with Clean Code principles by applying direct modifications'
 ---
 

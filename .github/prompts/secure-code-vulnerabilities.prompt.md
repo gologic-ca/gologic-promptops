@@ -1,5 +1,5 @@
 ---
-mode: "agent"
+agent: "agent"
 description: 'Secure application by directly fixing code-level vulnerabilities with educational explanations'
 ---
 

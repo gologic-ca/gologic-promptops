@@ -1,6 +1,5 @@
-```prompt
 ---
-mode: "agent"
+agent: "agent"
 description: 'Improve database design, queries, and data access patterns with Clean Database principles'
 ---
 
@@ -93,4 +92,3 @@ Existing database implementation requiring improvement with:
 - "Database Design for Mere Mortals" by Michael J. Hernandez
 - "Clean SQL" principles by Doug Bierer
 - Database normalization theory (Codd's rules)
-```
